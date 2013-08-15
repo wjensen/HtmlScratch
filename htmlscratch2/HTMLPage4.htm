@@ -1,0 +1,769 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+        td {
+	        text-align: left;
+	        vertical-align: top;
+	        font-family:Tahoma;
+	        font-size:12px;
+	        color:#003366;
+	        margin:-1px;
+        }
+
+        img{ 
+	        display:block; /*allows the element to take auto margins*/ 
+	        /*margin:0 auto; centers in compliant browsers*/ 
+	        /*text-align:center; centers in old versions of IE*/ 
+        } 
+        form
+        {
+	        margin:-1px;
+        }
+
+        a 
+        {
+	        font-family:Arial;
+	        font-size:13px;
+	        text-decoration: none;
+	        font-weight: bold;
+	        color:#806C59;
+        }
+
+        a:Hover  {
+	        color : #806C59;
+	        text-decoration : underline;
+        }
+
+        .addstyles {
+	        color: #FFFFFF;
+	        font-weight: bold;
+        	
+        }
+
+        H1 {
+	        color: #E77800;
+	        font-weight: bold;
+	        font-size : 16px;
+        }
+        .menubar
+        {
+	        background-image: url(img/topbannerbg.jpg);
+        	
+        }
+        .title
+        {
+	        color: White;
+	        font-size: 20px;
+	        font-weight: bold;
+	        background-image: url(img/topbannerbg.jpg);
+	        padding: 10 0 5 5;
+        }
+        .accordionheader
+        {
+	        color: White;
+	        font-weight: bold;
+	        font-size : 12px;
+	        background-image: url(img/headerbg.jpg);
+	        border-style: none none ridge none; 
+	        border-width: 1px 0px 1px 0px; 
+	        padding: 2px 0px 2px 0px; 
+        }
+        .accordionheaderid
+        {
+	        color: black;
+	        font-weight: bold;
+	        font-size : 12px;
+	        background-image: url(img/headerbgltgray.jpg);
+	        border-style: none none ridge none; 
+	        border-width: 1px 0px 1px 0px; 
+	        padding: 2px 0px 2px 0px; 
+        }
+        .accordionbutton
+        {
+	        cursor: hand;
+	        text-align: right;
+        }
+
+        .accordionheaderidSub
+        {
+	        color: black;
+	        font-weight: bold;
+	        font-size : 12px;
+	        background-image: url(img/headerSubltgray.jpg);
+	        border-style: none none ridge none; 
+	        border-width: 1px 0px 1px 0px; 
+	        padding: 2px 0px 2px 0px; 
+        }
+    </style>
+    <script type="text/javascript">
+    function accordionize(elementid, buttonid)
+{
+    accordionElement = document.getElementById(elementid);
+    buttonelement = document.getElementById(buttonid);
+    if(accordionElement.style.display == 'none')
+    {
+        accordionElement.style.display = 'block';
+        buttonelement.innerHTML = '&#9650;&nbsp;';
+    }
+    else
+    {
+        accordionElement.style.display = 'none';
+        buttonelement.innerHTML = '&#9660;&nbsp';
+    }
+}
+</script>
+</head>
+<body>
+    <div style="overflow:auto; height:600px; width:250px">
+        <table id="layer1"  width="100%" cellpadding="0" cellspacing="0"> 
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td width="10" id="toggleDrainage0" class="accordionheaderid accordionbutton" onclick="accordionize('idLDrainage0', 'toggleDrainage0')">&#9660;&nbsp;</td>
+<td style="overflow: hidden" class="accordionheaderid"> &nbsp; <b>Drainage </b><i>(1 found)</i></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="idLDrainage0" style="display: none">
+<td>
+<table id="Watershed0"  width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td id="toggleWatershed0" class="accordionheaderidSub accordionbutton" onclick="accordionize('idLWatershed0', 'toggleWatershed0')">&#9650;&nbsp;</td>
+<td style="overflow: hidden" class="accordionheaderidSub"> &nbsp; <b>Lower Chickaloon River</b>
+<a href='#' onclick='showFeature(layerResultsArray[0].features[0], "featIdWatershed0"); return false;'>(show)</a>
+<a href='#' onclick='printFeature(layerResultsArray[0].features[0], "0"); return false;'> (print)</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="idLWatershed0" style="display: block">
+<td >
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<div style="padding-left:5px">
+<div style="padding-top: 5px;"><span style="font-size:9pt;font-family:'Cambria','serif'; color:#4F81BD; font-weight:bold;">Wetland Ecosystems</span></div>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Depression</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Discharge slope</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Disturbed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Drainageway</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Floating island</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater emergent wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">655.77</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater forested/shrub wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">12,527.55</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater pond</td>
+<td style="font-family:Verdana; font-size: 8pt;">236.81</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Headwater fen</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Kettle</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lake</td>
+<td style="font-family:Verdana; font-size: 8pt;">924.13</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lakebed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Late snow</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Riparian</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Tidal</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Wetland/Upland complex</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">By Total Watershed Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Depression</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Discharge slope</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Disturbed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Drainageway</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Floating island</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater emergent wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.9328%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater forested/Shrub wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">17.8191%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater pond</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.3368%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Headwater fen</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Kettle</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lake</td>
+<td style="font-family:Verdana; font-size: 8pt;">1.3145%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lakebed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Late snow</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Riparian</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Tidal</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Wetland/Upland complex</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">By Total Peninsula Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Depression</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Discharge slope</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Disturbed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Drainageway</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Floating island</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater emergent wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.0099%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater forested/Shrub wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.1892%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater pond</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.0036%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Headwater fen</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Kettle</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lake</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.014%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lakebed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Late snow</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Riparian</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Tidal</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Wetland/Upland complex</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">By Total Ecosystem Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Depression</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Discharge slope</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Disturbed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Drainageway</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Floating island</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater emergent wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">1.8396%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater forested/Shrub wetland</td>
+<td style="font-family:Verdana; font-size: 8pt;">4.5772%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Freshwater pond</td>
+<td style="font-family:Verdana; font-size: 8pt;">1.3113%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Headwater fen</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Kettle</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lake</td>
+<td style="font-family:Verdana; font-size: 8pt;">0.5012%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Lakebed</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Late snow</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Riparian</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Tidal</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Wetland/Upland complex</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-size:9pt;font-family:'Cambria','serif'; color:#4F81BD; font-weight:bold;">Habitats</span></div>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Caribou habitat area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Probable crane habitat area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho habitat area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho support habitat area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Possible coho stream area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho stream area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho habitat area</td>
+<td style="font-family:Verdana; font-size: 8pt;">0</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">By Total Watershed Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Caribou habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Probable crane habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho support habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Possible coho stream</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho stream</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">By Total Peninsula Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Caribou habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Probable crane habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho support habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Possible coho stream</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho stream</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+</table>
+<div style="padding-top: 5px;"><span style="font-family:Verdana; font-size: 8pt; font-weight:bold;">By Total Habitat Area</span></div>
+<table>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Caribou habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Probable crane habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Coho support habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Possible coho stream</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho stream</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+<tr>
+<td style="font-family:Verdana; font-size: 8pt;">Likely coho habitat</td>
+<td style="font-family:Verdana; font-size: 8pt;">0%</td>
+</tr>
+</table>
+</div>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table id="layer11"  width="100%" cellpadding="0" cellspacing="0"> 
+    <tr>
+        <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="10" id="toggleWetlands1" class="accordionheaderid accordionbutton" onclick="accordionize('idLWetlands1', 'toggleWetlands1')">&#9660;&nbsp;</td>
+                    <td style="overflow: hidden" class="accordionheaderid"> &nbsp; <b>Wetlands </b><i>(4 found)</i></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr id="idLWetlands1" style="display: none">
+        <td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+<table id="Ecosystem0"  width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td id="toggleEcosystem0" class="accordionheaderidSub accordionbutton" onclick="accordionize('idLEcosystem0', 'toggleEcosystem0')">&#9650;&nbsp;</td>
+<td style="overflow: hidden" class="accordionheaderidSub"> &nbsp; <b>PFO4/SS1B</b>
+<a href='#' onclick='showFeature(layerResultsArray[1].features[0], "featIdEcosystem0"); return false;'>(show)</a>
+<a href='#' onclick='printFeature(layerResultsArray[1].features[0], "1"); return false;'> (print)</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="idLEcosystem0" style="display: block">
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<div style='padding-left:5px'>
+<table width='100' cellpadding='0' cellspacing='0'>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Ecosystem : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Freshwater forested/Shrub wetland</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>URL : </td>
+<td style='font-family:Verdana; font-size: 8pt; cursor:hand; color:blue;' onClick="window.open(' http://wetlandsfws.er.usgs.gov/NWI/webatx/atx.html','featurewindow')"><b>(html:link)</b></td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Photo URL : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Crane habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Coho habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Caribou habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>MapUnit : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> PFO4/SS1B</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>GLOBALID : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> {7761E2E5-6700-4C12-BFE2-32713FA4B2EF}</td>
+</tr>
+</table>
+</div>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table id="Ecosystem1"  width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td id="toggleEcosystem1" class="accordionheaderidSub accordionbutton" onclick="accordionize('idLEcosystem1', 'toggleEcosystem1')">&#9660;&nbsp;</td>
+<td style="overflow: hidden" class="accordionheaderidSub"> &nbsp; <b>PSS4/1B</b>
+ <a href='#' onclick='showFeature(layerResultsArray[1].features[1], "featIdEcosystem1"); return false;'>(show)</a>
+ <a href='#' onclick='printFeature(layerResultsArray[1].features[1], "1"); return false;'> (print)</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="idLEcosystem1" style="display: none">
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<div style='padding-left:5px'>
+<table width='100' cellpadding='0' cellspacing='0'>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Ecosystem : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Freshwater forested/Shrub wetland</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>URL : </td>
+<td style='font-family:Verdana; font-size: 8pt; cursor:hand; color:blue;' onClick="window.open(' http://wetlandsfws.er.usgs.gov/NWI/webatx/atx.html','featurewindow')"><b>(html:link)</b></td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Photo URL : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Crane habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Coho habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Caribou habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>MapUnit : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> PSS4/1B</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>GLOBALID : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> {4B041C3B-3C9B-4AFC-9E82-BA693D01C66E}</td>
+</tr>
+</table>
+</div>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table id="Ecosystem2"  width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td id="toggleEcosystem2" class="accordionheaderidSub accordionbutton" onclick="accordionize('idLEcosystem2', 'toggleEcosystem2')">&#9660;&nbsp;</td>
+<td style="overflow: hidden" class="accordionheaderidSub"> &nbsp; <b>PSS1/EM5C</b>
+ <a href='#' onclick='showFeature(layerResultsArray[1].features[2], "featIdEcosystem2"); return false;'>(show)</a>
+ <a href='#' onclick='printFeature(layerResultsArray[1].features[2], "1"); return false;'> (print)</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="idLEcosystem2" style="display: none">
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<div style='padding-left:5px'>
+<table width='100' cellpadding='0' cellspacing='0'>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Ecosystem : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Freshwater forested/Shrub wetland</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>URL : </td>
+<td style='font-family:Verdana; font-size: 8pt; cursor:hand; color:blue;' onClick="window.open(' http://wetlandsfws.er.usgs.gov/NWI/webatx/atx.html','featurewindow')"><b>(html:link)</b></td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Photo URL : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Crane habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Coho habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>Caribou habitat function : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> Null</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>MapUnit : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> PSS1/EM5C</td>
+</tr>
+<tr>
+<td style='font-family:Verdana; font-size: 8pt;'>GLOBALID : </td>
+<td style='font-family:Verdana; font-size: 8pt;'> {0116B8EF-2DBB-4DEE-89CC-46F16C6F4237}</td>
+</tr>
+</table>
+</div>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		function openImage(url){
+			window.open(url);
+		}
+
+	</script>
+	<style>
+		.con{width:auto; padding: 10px}
+		.top{width:auto;height:auto;position:absolute;top:0;left:0;}
+		.bottom{width:auto;height:auto;position:absolute;bottom:0;left: 0;}
+		.middle{width:auto;min-height:1px;bottom:50px;top:20px;left:0;}
+		a.TryRedButton 
+  		{
+       -moz-border-radius: 5px;
+			-o-border-radius: 5px;
+			/* some nice roundy corners */
+			-webkit-border-radius: 5px;
+			background: #b4ddb4; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I0ZGRiNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iIzgzYzc4MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iIzUyYjE1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iIzAwOGEwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iIzAwNTcwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDI0MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b4ddb4), color-stop(17%, #83c783), color-stop(33%, #52b152), color-stop(67%, #008a00), color-stop(83%, #005700), color-stop(100%, #002400)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* W3C */
+			/* remove any inherited or default borders - especially important for the <button> element*/
+			border: 0 !important;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 12px;
+			font-weight: normal;
+			height: 24px;
+			letter-spacing: 1px;
+	
+			line-height: 24px;
+			line-height: normal !important;
+			margin-bottom: 1px;
+			margin-left: -1px;
+			margin-right: 1px;
+			margin-top: -1px;
+			padding-bottom: 2px;
+			padding-bottom: 0;
+
+			padding-left: 10px;
+			padding-right: 10px;
+			/* these rules for the button press effect */
+			padding-top: 1px;
+			position: static;
+
+			vertical-align: middle;
+			width: auto;	}
+  a.TryRedButton:hover 
+  		{
+        background-image: -moz-linear-gradient(top left -90deg, #3f3f3f, #585858);}
+	</style>
+</head>
+	<body>
+		<div class="accordion">
+<!--			<h2>one</h2>
+			<div>
+				
+				<div style="position: relative;float: left">
+					<div class="con">
+						<div class="top">
+			
+						</div>
+						<div class="middle">
+							<a href="javascript:;" onclick="openImage('http://photoslaves.com/wp-content/gallery/philippe-halsman/salvador-dali.jpg')">
+								<img src="http://photoslaves.com/wp-content/gallery/philippe-halsman/salvador-dali.jpg" style="width: 150px" alt="Dali"/>
+							</a>
+						</div>
+						<div class="bottom">
+							<a href="javascript:;" onclick="alert('delete')">
+								<img src="Images/1375144750_Stop.png" style="width: 24px" />
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<div style="position: relative; float: left">
+					<div class="con">
+						<div class="top">
+			
+						</div>
+						<div class="middle">
+							<a href="javascript:;" onclick="openImage('http://photoslaves.com/wp-content/gallery/philippe-halsman/salvador-dali.jpg')">
+								<img src="http://photoslaves.com/wp-content/gallery/philippe-halsman/salvador-dali.jpg" style="width: 150px" alt="Dali"/>
+							</a>
+						</div>
+						<div class="bottom">
+							<a href="javascript:;" onclick="alert('delete')">
+								<img src="Images/1375144750_Stop.png" style="width: 24px" />
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>-->
+			<h2>two</h2>
+			<div>
+
+				<div style="position: relative; float: left; padding: 10px">
+
+					<a href="javascript:alert('opened');">Document</a><img src="Images/1375144750_Stop.png" onclick="alert('deleted')" style="width: 24px; float:left" />
+		
+				</div>
+
+					<div style="position: relative; float: left; padding: 10px">
+
+						<a href="javascript:alert('opened');">Document</a><img src="Images/1375144750_Stop.png" onclick="alert('deleted')" style="width: 24px; float:left" />
+		
+					</div>
+
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$('.accordion').accordion({ heightStyle: "content", collapsible: true });
+		})
+	</script>
+</html>

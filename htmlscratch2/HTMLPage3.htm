@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Print</title>
+    <link rel="stylesheet" type="text/css" href="print.css">
+    <style type="text/css">
+ 
+p.Normal
+	{
+	margin-top:0in;
+	margin-right:0in;
+    margin-bottom:0in;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+
+	text-align:center;
+	line-height:normal
+	}
+p.ColumnHeader
+    {
+    margin-top:0in;
+	margin-right:0in;
+    margin-bottom:0in;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	text-align:center;
+	line-height:normal
+    }
+p.Attribute
+{
+	width:131.4pt;
+	border:solid black 1.0pt;
+	padding:0in 5.4pt 0in 5.4pt
+}
+p.Data
+{
+	width:1.5in;
+	border:solid black 1.0pt;
+	padding:0in 5.4pt 0in 5.4pt
+}
+h1
+	{
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+    }
+h2
+	{
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+    }
+span.Heading1Char
+	{
+	font-family:"Cambria","serif";
+	color:#365F91;
+
+	}
+span.Heading2Char
+	{
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+    }
+
+@page PageLayout
+	{
+		size:8.5in 11.0in;
+	    margin:1.0in 1.0in 1.0in 1.0in;
+    }
+div.PageLayout
+	{
+		page:PageLayout;
+	}
+	</style>
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.3/js/dojo/dijit/themes/tundra/tundra.css">
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=1.3"></script>
+    <!--<script type="text/javascript" src="javascript/framework.js"></script>-->
+    <script type="text/javascript" src="javascript/print.js"></script>
+    <script type="text/javascript" src="javascript/xml_factory.js"></script>
+    <script type="text/javascript" language="Javascript">
+      dojo.require("esri.tasks.query");
+      
+      function init() {
+        generateLayout();
+      }
+      dojo.addOnLoad(init);
+    </script>
+
+</head>
+<body id="documentBody" style='margin-left:.5in'>
+<DIV class=PageLayout>
+<H1>Battle Creek</H1>
+<H2 style="MARGIN-LEFT: 0.5in">Wetland Ecosystems</H2>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Acres</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Depression</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Discharge slope</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Disturbed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Drainageway</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Floating island</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater emergent wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>1.126023</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater forested/shrub wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>108.4018</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater pond</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>133.3465</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Headwater fen</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Kettle</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lake</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lakebed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Late snow</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Riparian</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Tidal</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Wetland/Upland complex</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">By Total Watershed Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Percent</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Depression</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Discharge slope</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Disturbed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Drainageway</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Floating island</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater emergent wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.00007165611</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater forested/Shrub wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.006898309</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater pond</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.008485698</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Headwater fen</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Kettle</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lake</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lakebed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Late snow</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Riparian</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Tidal</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Wetland/Upland complex</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">By Total Peninsula Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Percent</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Depression</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Discharge slope</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Disturbed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Drainageway</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Floating island</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater emergent wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.0000001700416</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater forested/Shrub wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.00001636984</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater pond</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.00002013675</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Headwater fen</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Kettle</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lake</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lakebed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Late snow</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Riparian</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Tidal</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Wetland/Upland complex</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">By Total Ecosystem Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Percent</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Depression</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Discharge slope</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Disturbed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Drainageway</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Floating island</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater emergent wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.00003158742</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater forested/Shrub wetland</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.0003960719</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Freshwater pond</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0.007384121</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Headwater fen</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Kettle</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lake</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Lakebed</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Late snow</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Riparian</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Tidal</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Wetland/Upland complex</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 0.5in">Habitats</H2>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Acres</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Caribou habitat area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Probable crane habitat area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho habitat area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho support habitat area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Possible coho stream area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho stream area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho habitat area</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">By Total Watershed Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Percent</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Caribou habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Probable crane habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho support habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Possible coho stream</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho stream</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">By Total Peninsula Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Percent</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Caribou habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Probable crane habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho support habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Possible coho stream</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho stream</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE>
+<H2 style="MARGIN-LEFT: 1in; LINE-HEIGHT: normal"><SPAN style="COLOR: black">By Total Habitat Area</SPAN></H2>
+<TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-LEFT: 1in; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=ColumnHeader align=center>Type</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=ColumnHeader align=center>Percent</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Caribou habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Probable crane habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Coho support habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Possible coho stream</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho stream</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR>
+<TR>
+<TD class=Attribute vAlign=top width=175>
+<P class=Normal align=center>Likely coho habitat</P></TD>
+<TD class=Data vAlign=top width=144>
+<P class=Normal align=center>0</P></TD></TR></TBODY></TABLE></DIV>
+</body>
+</html>
+

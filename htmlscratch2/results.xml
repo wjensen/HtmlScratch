@@ -1,0 +1,125 @@
+﻿<?xml version="1.0"?>
+<Results Name="">
+  <Feature Name="Battle Creek">
+    <Group Name="Wetland Ecosystems">
+      <Header Name="Area">
+        <ColumnTitle Name="Type" Value="Acres"/>
+        <Attribute Name="Depression " Value="0"/>
+        <Attribute Name="Discharge slope " Value="0"/>
+        <Attribute Name="Disturbed " Value="0"/>
+        <Attribute Name="Drainageway " Value="0"/>
+        <Attribute Name="Floating island " Value="0"/>
+        <Attribute Name="Freshwater emergent wetland " Value="1.126023"/>
+        <Attribute Name="Freshwater forested/shrub wetland " Value="108.4018"/>
+        <Attribute Name="Freshwater pond " Value="133.3465"/>
+        <Attribute Name="Headwater fen " Value="0"/>
+        <Attribute Name="Kettle " Value="0"/>
+        <Attribute Name="Lake " Value="0"/>
+        <Attribute Name="Lakebed " Value="0"/>
+        <Attribute Name="Late snow " Value="0"/>
+        <Attribute Name="Riparian " Value="0"/>
+        <Attribute Name="Tidal " Value="0"/>
+        <Attribute Name="Wetland/Upland complex " Value="0"/>
+      </Header>
+      <Header Name="By Total Watershed Area">
+        <ColumnTitle Name="Type" Value="Percent"/>
+        <Attribute Name="Depression " Value="0"/>
+        <Attribute Name="Discharge slope " Value="0"/>
+        <Attribute Name="Disturbed " Value="0"/>
+        <Attribute Name="Drainageway " Value="0"/>
+        <Attribute Name="Floating island " Value="0"/>
+        <Attribute Name="Freshwater emergent wetland " Value="0.00007165611"/>
+        <Attribute Name="Freshwater forested/Shrub wetland " Value="0.006898309"/>
+        <Attribute Name="Freshwater pond " Value="0.008485698"/>
+        <Attribute Name="Headwater fen " Value="0"/>
+        <Attribute Name="Kettle " Value="0"/>
+        <Attribute Name="Lake " Value="0"/>
+        <Attribute Name="Lakebed " Value="0"/>
+        <Attribute Name="Late snow " Value="0"/>
+        <Attribute Name="Riparian " Value="0"/>
+        <Attribute Name="Tidal " Value="0"/>
+        <Attribute Name="Wetland/Upland complex " Value="0"/>
+      </Header>
+      <Header Name="By Total Peninsula Area">
+        <ColumnTitle Name="Type" Value="Percent"/>
+        <Attribute Name="Depression " Value="0"/>
+        <Attribute Name="Discharge slope " Value="0"/>
+        <Attribute Name="Disturbed " Value="0"/>
+        <Attribute Name="Drainageway " Value="0"/>
+        <Attribute Name="Floating island " Value="0"/>
+        <Attribute Name="Freshwater emergent wetland " Value="0.0000001700416"/>
+        <Attribute Name="Freshwater forested/Shrub wetland " Value="0.00001636984"/>
+        <Attribute Name="Freshwater pond " Value="0.00002013675"/>
+        <Attribute Name="Headwater fen " Value="0"/>
+        <Attribute Name="Kettle " Value="0"/>
+        <Attribute Name="Lake " Value="0"/>
+        <Attribute Name="Lakebed " Value="0"/>
+        <Attribute Name="Late snow " Value="0"/>
+        <Attribute Name="Riparian " Value="0"/>
+        <Attribute Name="Tidal " Value="0"/>
+        <Attribute Name="Wetland/Upland complex " Value="0"/>
+      </Header>
+      <Header Name="By Total Ecosystem Area">
+        <ColumnTitle Name="Type" Value="Percent"/>
+        <Attribute Name="Depression " Value="0"/>
+        <Attribute Name="Discharge slope " Value="0"/>
+        <Attribute Name="Disturbed " Value="0"/>
+        <Attribute Name="Drainageway " Value="0"/>
+        <Attribute Name="Floating island " Value="0"/>
+        <Attribute Name="Freshwater emergent wetland " Value="0.00003158742"/>
+        <Attribute Name="Freshwater forested/Shrub wetland " Value="0.0003960719"/>
+        <Attribute Name="Freshwater pond " Value="0.007384121"/>
+        <Attribute Name="Headwater fen " Value="0"/>
+        <Attribute Name="Kettle " Value="0"/>
+        <Attribute Name="Lake " Value="0"/>
+        <Attribute Name="Lakebed " Value="0"/>
+        <Attribute Name="Late snow " Value="0"/>
+        <Attribute Name="Riparian " Value="0"/>
+        <Attribute Name="Tidal " Value="0"/>
+        <Attribute Name="Wetland/Upland complex " Value="0"/>
+      </Header>
+    </Group>
+    <Group Name="Habitats">
+      <Header Name="Area">
+        <ColumnTitle Name="Type" Value="Acres"/>
+        <Attribute Name="Caribou habitat area" Value="0"/>
+        <Attribute Name="Probable crane habitat area" Value="0"/>
+        <Attribute Name="Coho habitat area" Value="0"/>
+        <Attribute Name="Coho support habitat area" Value="0"/>
+        <Attribute Name="Possible coho stream area" Value="0"/>
+        <Attribute Name="Likely coho stream area" Value="0"/>
+        <Attribute Name="Likely coho habitat area" Value="0"/>
+      </Header>
+      <Header Name="By Total Watershed Area">
+        <ColumnTitle Name="Type" Value="Percent"/>
+        <Attribute Name="Caribou habitat " Value="0"/>
+        <Attribute Name="Probable crane habitat " Value="0"/>
+        <Attribute Name="Coho habitat " Value="0"/>
+        <Attribute Name="Coho support habitat " Value="0"/>
+        <Attribute Name="Possible coho stream " Value="0"/>
+        <Attribute Name="Likely coho stream " Value="0"/>
+        <Attribute Name="Likely coho habitat " Value="0"/>
+      </Header>
+      <Header Name="By Total Peninsula Area">
+        <ColumnTitle Name="Type" Value="Percent"/>
+        <Attribute Name="Caribou habitat " Value="0"/>
+        <Attribute Name="Probable crane habitat " Value="0"/>
+        <Attribute Name="Coho habitat " Value="0"/>
+        <Attribute Name="Coho support habitat " Value="0"/>
+        <Attribute Name="Possible coho stream " Value="0"/>
+        <Attribute Name="Likely coho stream " Value="0"/>
+        <Attribute Name="Likely coho habitat " Value="0"/>
+      </Header>
+      <Header Name="By Total Habitat Area">
+        <ColumnTitle Name="Type" Value="Percent"/>
+        <Attribute Name="Caribou habitat " Value="0"/>
+        <Attribute Name="Probable crane habitat " Value="0"/>
+        <Attribute Name="Coho habitat " Value="0"/>
+        <Attribute Name="Coho support habitat " Value="0"/>
+        <Attribute Name="Possible coho stream " Value="0"/>
+        <Attribute Name="Likely coho stream " Value="0"/>
+        <Attribute Name="Likely coho habitat " Value="0"/>
+      </Header>
+    </Group>
+  </Feature>
+</Results>

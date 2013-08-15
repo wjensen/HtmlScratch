@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function Button1_onclick() {
+    var objXHR = new XMLHttpRequest();
+    objXHR.open('GET','http://mapserver.borough.kenai.ak.us/ArcGIS/rest/services/KWF/pen_wetlands2/MapServer/1',true);
+    
+    
+}
+
+// ]]>
+</script>
+</head>
+<body>
+
+    <p>
+        <input id="Button1" type="button" value="button" onclick="return Button1_onclick()" /></p>
+
+</body>
+</html>

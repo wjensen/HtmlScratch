@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+		<script src="Javascript/chosen.jquery.min.js"></script>
+	<link href="Css/chosen.min.css" rel="stylesheet" />
+	<link href="Css/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="accordion">
+		<h2>two</h2>
+		<div>
+			<select id="delimiterSelect" class="chosen-select">
+				<option value="\t" selected="selected">1</option>
+				<option value=" ">2</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+				<option value=",">3</option>
+			</select>
+
+		</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div id="tableDiv"  style="overflow-x:scroll ; overflow-y: hidden;">
+		<select id="Select1" class="chosen-select">
+			<option value="\t" selected="selected">1</option>
+			<option value=" ">2</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+			<option value=",">3</option>
+		</select>
+		<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	</div>
+</body>
+	<script>
+		$(document).ready(function() {
+			$(".chosen-select").chosen({ width: "95%" });
+			$(".accordion").accordion({
+				heightStyle: "content"
+			});
+		});
+			
+	</script>
+</html>
